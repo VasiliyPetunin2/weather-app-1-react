@@ -1,0 +1,11 @@
+.dark .sliderCard {
+    background: var(--panel-dark, #212331);
+}
+
+.dark .sliderCardText {
+    color: #E6E6E6;
+}
+
+.dark .sliderCardTextTransparent {
+    color: #6D6D6D;
+}

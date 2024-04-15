@@ -1,0 +1,170 @@
+.side-bar {
+   width: 32vw;
+   height: 100vh;
+   min-height: 720px;
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 42px;
+   padding-bottom: 35px;
+   background: var(--panel-light);
+   background-image: url(../../assets/images/Cloud-background1.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-blend-mode: difference;
+   background-size: contain;
+   overflow-y: hidden;
+   position: sticky;
+   top: 0;
+   bottom: 0;
+}
+
+.side-bar-btnsRow {
+   width: 100%;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.btn-switchTheme {
+   border: none;
+   background: none;
+   border-radius: 50%;
+   cursor: pointer;
+   transition: box-shadow 0.5s;
+}
+
+.btn-switchTheme:hover {
+   box-shadow: 12px 12px 3px rgba(0, 0, 0, 0.05);
+}
+
+#switchThemeBtnIcon,
+#switchThemeBtnIconBackground {
+   transition: fill 0.5s, transform 0.5s;
+}
+
+.side-bar-content {
+   display: flex;
+   flex-flow: column nowrap;
+   align-items: center;
+}
+
+.precipitationIMG {
+   min-width: 200px;
+   min-height: 200px;
+}
+
+.temperature {
+   color: var(--gray, #48484a);
+   text-align: center;
+   font-family: Rubik;
+   font-size: 96px;
+   font-style: normal;
+   font-weight: 900;
+   line-height: normal;
+   padding: 2px 0px 2px 0px;
+}
+
+.temperature::after {
+   content: "°C";
+   font-size: 50px;
+   font-weight: 500;
+}
+
+.precipitation {
+   color: var(--gray, #48484a);
+   font-family: Rubik;
+   font-size: 36px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 100%;
+   text-align: center;
+   margin: 17px 0px 17px 0px;
+}
+
+.feelsLike {
+   color: var(--hint, #acacac);
+   text-align: center;
+   font-family: Rubik;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+}
+
+.dateAndLocationInfo {
+   display: flex;
+   flex-flow: column nowrap;
+   align-items: center;
+   margin-top: 78px;
+}
+
+.dateInfo {
+   display: flex;
+}
+
+.today {
+   color: var(--hint, #acacac);
+   text-align: center;
+   font-family: Rubik;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   margin-right: 44px;
+}
+
+.date {
+   color: var(--hint, #acacac);
+   text-align: center;
+   font-family: Rubik;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   margin-left: 44px;
+}
+
+.locationInfo {
+   display: flex;
+   align-items: center;
+   margin-top: 25px;
+}
+
+.nameOfTheLocality {
+   color: var(--hint, #acacac);
+   text-align: center;
+   font-family: Rubik;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   padding: 0px 5px 0px 5px;
+}
+
+@media (max-width: 1439px) {
+   .btn-searchCity {
+      margin-left: 30px;
+   }
+}
+
+@media (min-width: 834px) and (max-width: 1439px) {
+   .side-bar {
+      width: 39.5vw;
+      padding-top: 53px;
+      background-position-y: 30%;
+   }
+}
+
+@media (max-width: 833px) {
+   .side-bar {
+      width: 100%;
+      height: unset;
+      min-height: unset;
+      max-height: 720px;
+      position: unset;
+      padding-top: 30px;
+   }
+}

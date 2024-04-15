@@ -1,0 +1,33 @@
+.historyOfSearching {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.historyOfSearchingList {
+    list-style-type: none;
+    row-gap: 10px;
+}
+
+.btn.btn-historyOfSearching {
+    width: 100%;
+    color: var(--gray, #48484A);
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    text-align: left;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    border: none;
+    background: none;
+    transition: background-color 0.5s, background-image 0.5s, box-shadow 0.5s;
+}
+
+.btn.btn-historyOfSearching:hover {
+    border-radius: 10px;
+    background-color: var(--gray-ligth, #E6E6E6);
+    background-image: url(../../assets/images/searchCityPanel/historyOfSearching/Vector.svg);
+    background-position: 90%;
+    background-repeat: no-repeat;
+}

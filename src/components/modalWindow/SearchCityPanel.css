@@ -1,0 +1,101 @@
+.searchCityPanel {
+    width: 32vw;
+    min-height: 100%;
+    background: var(--panel-light, #FFF);
+    padding: 46px 46px 0px 46px;
+    position: absolute;
+    top: 0;
+    left: -32vw;
+    z-index: 1;
+    opacity: 0;
+    transition: left 0.5s, opacity 0.5s;
+}
+
+body .openedSearchCityPanel {
+    left: 0;
+    opacity: 1;
+}
+
+.searchCityPanelContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.btn-closeSearchCityPanel {
+    border: none;
+    background: var(--panel-light, #FFF);
+    align-self: flex-end;
+    cursor: pointer;
+    transition: opacity 0.5s;
+}
+
+.btn-closeSearchCityPanel:hover {
+    opacity: 0.5;
+}
+
+.form-searchCityPanel {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    column-gap: 22px;
+    margin-top: 46px;
+}
+
+body .textFieldSearchCityPanel {
+    max-width: 60%;
+    text-align: left;
+    border-radius: 10px;
+    border: 2px solid var(--hint, #ACACAC);
+    background: var(--panel-light, #FFF);
+    color: var(--gray, #48484A);
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+    background-image: url(../../assets/images/searchCityPanel/Vector.svg);
+    background-position: 5%;
+    background-repeat: no-repeat;
+    padding-left: 44px;
+}
+
+@media (max-width: 1439px) {
+    .form-searchCityPanel {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    body .textFieldSearchCityPanel {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+@media (min-width: 834px) and (max-width: 1439px) {
+    .searchCityPanel {
+        width: 39.5vw;
+        left: -39.5vw;
+        padding: 59px 27px;
+    }
+}
+
+@media (max-width: 833px) {
+    .searchCityPanel {
+        width: 100%;
+        min-height: 705.5px;
+        left: -100%;
+        padding: 40px 50px 40px 27px;
+    }
+
+    body .textFieldSearchCityPanel {
+        background-position: 3%;
+    }
+}

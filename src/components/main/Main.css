@@ -1,0 +1,159 @@
+.content-container {
+   width: 68vw;
+   display: flex;
+   background: var(--background-light, #f1f1f1);
+   padding: 42px 120px 44px 138px;
+}
+
+.content {
+   margin: 0 auto;
+   display: flex;
+   flex-flow: column nowrap;
+   row-gap: 38px;
+}
+
+.predictionBlock {
+   display: flex;
+   flex-flow: column nowrap;
+}
+
+.predictionHeader {
+   max-width: 362px;
+   display: flex;
+   flex-flow: row nowrap;
+   align-items: center;
+   margin-bottom: 25px;
+}
+
+.predictionTitle {
+   color: var(--gray, #48484a);
+   font-family: Rubik;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 100%;
+   margin-right: 24px;
+}
+
+.predictionTabs {
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between;
+   flex: auto;
+   column-gap: 16px;
+   white-space: nowrap;
+}
+
+.predictionTab {
+   border: none;
+   background: none;
+   cursor: pointer;
+   color: var(--hint, #acacac);
+   font-family: Rubik;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 100%;
+   transition: color 0.5s;
+}
+
+.predictionTab:hover {
+   color: var(--gray, #48484a);
+   cursor: pointer;
+   white-space: nowrap;
+}
+
+.predictionTabActive {
+   color: var(--gray, #48484a);
+   text-decoration: underline 3px;
+   text-underline-offset: 9px;
+}
+
+.todaysDetailsBlock {
+   display: flex;
+   flex-flow: column nowrap;
+   row-gap: 19px;
+}
+
+.todaysDetailsTitle {
+   color: var(--gray, #48484a);
+   font-family: Rubik;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 100%;
+}
+
+.todaysDetailsCards {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   row-gap: 18px;
+   column-gap: 80px;
+}
+
+@media (min-width: 834px) and (max-width: 1439px) {
+   .content-container {
+      width: 60.5vw;
+      padding: 61px 67px 83px 76px;
+   }
+
+   .content {
+      row-gap: 42px;
+   }
+
+   .todaysDetailsCards {
+      padding: 0px 20px;
+      row-gap: 27px;
+   }
+}
+
+@media (max-width: 833px) {
+   .container {
+      flex-flow: column nowrap;
+   }
+
+   .content-container {
+      width: 100%;
+      padding: 50px 30px;
+   }
+
+   .content {
+      row-gap: 59px;
+   }
+
+   .predictionBlock {
+      align-items: center;
+   }
+
+   .predictionHeader {
+      width: 100%;
+      max-width: none;
+      flex-flow: column nowrap;
+      align-items: center;
+      row-gap: 30px;
+      margin-bottom: 25px;
+   }
+
+   .predictionTitle {
+      margin: 0;
+   }
+
+   .predictionTabs {
+      column-gap: 55px;
+   }
+
+   .todaysDetailsBlock {
+      row-gap: 30px;
+   }
+
+   .todaysDetailsTitle {
+      text-align: center;
+   }
+
+   .todaysDetailsCards {
+      align-items: center;
+      flex-flow: column nowrap;
+      row-gap: 27px;
+   }
+}

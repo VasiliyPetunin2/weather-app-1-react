@@ -1,0 +1,29 @@
+.dark .side-bar {
+   background: var(--panel-dark, #212331);
+   background-image: url(../../assets/images/Cloud-background1.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-blend-mode: difference;
+   background-size: contain;
+}
+
+.dark #switchThemeBtnIconBackground {
+   fill: var(--accent, #ec6e4d);
+}
+
+.dark #switchThemeBtnIcon {
+   fill: var(--panel-dark, #212331);
+}
+
+.dark #switchThemeBtnIconBackground,
+.dark #switchThemeBtnIcon {
+   transform: translateX(50%);
+}
+
+.dark .temperature {
+   color: var(--light-gray, #e6e6e6);
+}
+
+.dark .precipitation {
+   color: var(--light-gray, #e6e6e6);
+}

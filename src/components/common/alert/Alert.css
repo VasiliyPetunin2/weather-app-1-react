@@ -1,0 +1,32 @@
+.alert {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8B0000;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 15px;
+}
+
+.alertWarning {
+    color: var(--light-gray, #E6E6E6);
+    text-align: center;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+body .btn-alert {
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: opacity 0.5s;
+    margin-left: 20px;
+}
+
+.btn-alert:hover {
+    opacity: 0.5;
+}

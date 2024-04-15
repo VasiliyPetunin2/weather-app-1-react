@@ -1,0 +1,28 @@
+.dark .btn {
+    background: var(--panel-dark, #212331);
+    color: var(--gray-ligth, #E6E6E6);
+}
+
+.dark .content-container {
+    background: var(--background-dark, #100E1C);
+}
+
+.dark .predictionTitle {
+    color: #E6E6E6;
+}
+
+.dark .predictionTab {
+    color: #6D6D6D;
+}
+
+.dark .predictionTab:hover {
+    color: #E6E6E6;
+}
+
+.dark .predictionTabActive {
+    color: #E6E6E6;
+}
+
+.dark .todaysDetailsTitle {
+    color: var(--light-gray, #E6E6E6);
+}

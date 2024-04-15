@@ -1,0 +1,4 @@
+body .dark .btn.btn-historyOfSearching:hover {
+    background-color: var(--background-dark, #100E1C);
+    color: var(--gray-ligth, #E6E6E6);
+}
